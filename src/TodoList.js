@@ -1,10 +1,19 @@
 import React, { Component, Fragment } from "react";
 
 class TodoList extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      inputValue: '',
+      list: []
+    }
+  }
+  
   render() {
     return (
       <Fragment>
-        <div><input /><button>submit</button></div>
+        <div><input value={this.state.inputValue} onChange={this.handleInputChange.bind(this)} /><button>submit</button></div>
         <ul>
           <li>learn react</li>
           <li>learn redux</li>
@@ -12,6 +21,12 @@ class TodoList extends Component {
         </ul>
       </Fragment>
     );
+  }
+
+  handleInputChange(e) {
+    this.setState({
+      inputValue: e.target.value
+    })
   }
 }
 
