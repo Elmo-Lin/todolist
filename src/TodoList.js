@@ -13,11 +13,16 @@ class TodoList extends Component {
   render() {
     return (
       <Fragment>
-        <div><input value={this.state.inputValue} onChange={this.handleInputChange.bind(this)} /><button>submit</button></div>
+        <div>
+          <input value={this.state.inputValue} onChange={this.handleInputChange.bind(this)} />
+          <button onClick={this.handleBtnClick.bind(this)}>submit</button>
+        </div>
         <ul>
-          <li>learn react</li>
-          <li>learn redux</li>
-          <li>learn redux-saga</li>
+          {
+            this.state.list.map((item, index) => {
+              return <li key={index} onClick={this.handleItemDelete.bind(this, index)}>{item}</li>
+            })
+          }
         </ul>
       </Fragment>
     );
@@ -26,6 +31,21 @@ class TodoList extends Component {
   handleInputChange(e) {
     this.setState({
       inputValue: e.target.value
+    })
+  }
+
+  handleBtnClick() {
+    this.setState({
+      list: [...this.state.list, this.state.inputValue],
+      inputValue: ''
+    })
+  }
+
+  handleItemDelete(index) {
+    const list = [...this.state.list];
+    list.splice(index, 1);
+    this.setState({
+      list
     })
   }
 }
