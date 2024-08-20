@@ -25,7 +25,7 @@ class TodoList extends Component {
           {
             this.state.list.map((item, index) => {
               return (
-                <div>
+                <div key={index}>
                   <TodoItem content={item} index={index} handleItemDelete={this.handleItemDelete.bind(this)}/>
                   {/*<li key={index} onClick={this.handleItemDelete.bind(this, index)} dangerouslySetInnerHTML={{__html: item}}></li>*/}
                 </div>
