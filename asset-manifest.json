@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Elmo-Lin/todolist/static/css/main.891975e9.css",
-    "main.js": "/Elmo-Lin/todolist/static/js/main.f6406caa.js",
-    "index.html": "/Elmo-Lin/todolist/index.html",
-    "main.891975e9.css.map": "/Elmo-Lin/todolist/static/css/main.891975e9.css.map",
-    "main.f6406caa.js.map": "/Elmo-Lin/todolist/static/js/main.f6406caa.js.map"
+    "main.css": "/elmo-lin/todolist/static/css/main.891975e9.css",
+    "main.js": "/elmo-lin/todolist/static/js/main.f6406caa.js",
+    "index.html": "/elmo-lin/todolist/index.html",
+    "main.891975e9.css.map": "/elmo-lin/todolist/static/css/main.891975e9.css.map",
+    "main.f6406caa.js.map": "/elmo-lin/todolist/static/js/main.f6406caa.js.map"
   },
   "entrypoints": [
     "static/css/main.891975e9.css",
