@@ -17,8 +17,8 @@ class TodoList extends Component {
       // Fragment 代替 div
       <Fragment>
         <div>
-          <label htmlFor="insertArea">TODO</label>
-          <input value={this.state.inputValue} onChange={this.handleInputChange.bind(this)} className="input" id="insertArea" />
+          <label htmlFor="insertArea" style={{marginRight: '5px'}}>Task</label>
+          <input style={{marginRight: '5px'}} value={this.state.inputValue} onChange={this.handleInputChange.bind(this)} className="input" id="insertArea" />
           <button onClick={this.handleBtnClick.bind(this)}>submit</button>
         </div>
         <ul>
