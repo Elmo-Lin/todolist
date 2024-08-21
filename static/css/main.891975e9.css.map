@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.891975e9.css","mappings":"AAAA,OACI,qBAAuB,CACvB,iBACJ","sources":["style.css"],"sourcesContent":[".input {\n    border: 1px solid black;\n    border-radius: 5px;\n}"],"names":[],"sourceRoot":""}
